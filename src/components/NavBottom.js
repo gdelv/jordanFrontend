@@ -9,7 +9,7 @@ const NavBottom = (props) => {
             <div>
                 <img className={props.imageClass} src={props.src}></img>
             </div>
-            <div>
+            <div className={props.linkContainer}>
                 <a>{props.link1}</a>
                 <a>{props.link2}</a>
                 <a>{props.link3}</a>

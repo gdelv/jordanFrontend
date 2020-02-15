@@ -18,11 +18,43 @@
 
 .new-nav {
     position: fixed;
-    color: blue;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    /* color: blue; */
+    width: 100%;
+    top: 4rem;
     z-index: 90;
+    border-bottom: 2px solid black;
+    padding-bottom: 3rem;
 }
 
+.new-nav .link-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    padding: 3rem;
+}
+
+.link-container {
+    display: flex;
+    white-space: nowrap;
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.link-container a {
+    /* padding: 0px 10px; */
+}
 
 .jordan-logo {
     width: 5rem;

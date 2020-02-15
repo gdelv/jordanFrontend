@@ -30,7 +30,7 @@ class Nav extends React.Component {
     }
 
     handleScroll = (e) => {
-        if (window.pageYOffset > 80) {
+        if (window.pageYOffset > 40) {
             console.log('scrolled')
 
             this.setState({
@@ -78,8 +78,12 @@ class Nav extends React.Component {
             <NavBottom
                 src='https://www.nike.com/assets/experience/ciclp/static/v2/967-923697ad62d/static/icons/jordan.svg'
                 link1='New Releases'
+                link2='Men'
+                link3='Women'
+                link4='Kids'
                 containerClass={this.state.visible ? 'bottom' : 'new-nav'}
                 imageClass='jordan-logo'
+                linkContainer='link-container'
                 
 
             />
