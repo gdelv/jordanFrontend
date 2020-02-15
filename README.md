@@ -8,9 +8,9 @@ This project was created using React and Ruby on Rails
 
 [ ] Set up Components
 
-[ ] Set up Routes
+[x] Set up Routes
 
-[ ] Set up Screens
+[x] Set up Screens
 
 [ ] Set up ApiConfig
 
