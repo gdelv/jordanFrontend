@@ -16,4 +16,6 @@ This project was created using React and Ruby on Rails
 
 [ ] Complete Styling
 
+[ ] Change index.html website Title and Icon
+
 [ ] Deploy App
