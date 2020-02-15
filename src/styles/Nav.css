@@ -1,0 +1,51 @@
+.nav-bar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 10px;
+    height: 6vh;
+    /* position: fixed; */
+    top: 0;
+    transition: top 0.6s;
+    width: 100%;
+    /* top: 0vh; */
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.new-nav {
+    position: fixed;
+    color: blue;
+    top: 0px;
+    z-index: 90;
+}
+
+
+.jordan-logo {
+    width: 5rem;
+}
+
+
+.logo {
+    min-width: 30px;
+    min-height: 30px;
+    width: 4rem;
+}
+
+.right-nav {
+    display: flex;
+    width: 10rem;
+    justify-content: space-evenly;
+}
+
+.right-nav a {
+    color: black;
+}
+
+
+.right-nav svg {
+    
+}

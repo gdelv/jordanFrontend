@@ -6,6 +6,7 @@ import Footer from './shared/Footer'
 
 
 class App extends React.Component {
+  
 
   render () {
     return (
