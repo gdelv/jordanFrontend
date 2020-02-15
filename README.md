@@ -15,3 +15,5 @@ This project was created using React and Ruby on Rails
 [ ] Set up ApiConfig
 
 [ ] Complete Styling
+
+[ ] Deploy App
