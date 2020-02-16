@@ -22,16 +22,19 @@
     flex-direction: column;
     /* color: blue; */
     width: 100%;
-    top: 4rem;
+    top: 3rem;
     z-index: 90;
-    border-bottom: 2px solid black;
-    padding-bottom: 3rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5rem;
 }
 
 .new-nav .link-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-left: -.1rem;
 }
+
 
 
 
@@ -41,7 +44,7 @@
     align-items: center;
     position: relative;
     top: 0px;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .link-container {
@@ -53,11 +56,19 @@
 }
 
 .link-container a {
-    /* padding: 0px 10px; */
+    cursor: pointer;
+    color: #111;
+    font-weight: 500;
 }
 
 .jordan-logo {
     width: 5rem;
+}
+
+
+.new-nav .jordan-logo {
+    width: 3.5rem;
+    padding-left: 1.2rem;
 }
 
 

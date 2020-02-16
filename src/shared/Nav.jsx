@@ -52,7 +52,6 @@ class Nav extends React.Component {
             >
                 <div>
                     <img class='logo' src='https://i.imgur.com/iB0cdid.png'></img>
-                    <b>{this.state.elementHeight}</b>
                 </div>
                 <div class='right-nav'>
                     <FiSearch
