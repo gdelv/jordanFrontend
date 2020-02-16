@@ -1,0 +1,24 @@
+.kemba-title {
+    position: relative;
+    z-index: 1;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    margin-top: -12rem;
+
+}
+.kemba-title h2 {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+}
+
+.kemba-title a {
+    padding: .8rem;
+    width: 2.5rem;
+    
+    border-radius: 20px;
+    background: #111;
+    color: #fff;
+}

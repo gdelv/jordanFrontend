@@ -1,3 +1,26 @@
 .App {
     height: 300vh;
 }
+
+.landing {
+    position: relative;
+    z-index: -1;
+}
+
+.please {
+    position: relative;
+    z-index: -1000;
+}
+
+.kemba {
+    position: relative;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer {
+    position: relative;
+    z-index: -1;
+}

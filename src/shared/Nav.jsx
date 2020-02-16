@@ -30,7 +30,7 @@ class Nav extends React.Component {
     }
 
     handleScroll = (e) => {
-        if (window.pageYOffset > 40) {
+        if (window.pageYOffset > 35) {
             console.log('scrolled')
 
             this.setState({
