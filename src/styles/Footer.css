@@ -62,10 +62,6 @@
     transform: rotate(180deg);
 }
 
-.help-plus {
-    margin: auto 0;
-    padding-right: 1rem;
-}
 .help-modal {
     /* border: 1px solid red; */
     height: fit-content;
@@ -83,4 +79,20 @@
     padding-bottom: .6rem;
     color: gray;
     font-size: .7rem;
+}
+.social-media-container {
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    width: 50%;
+
+}
+
+.social-link-container {
+    font-size: 1.5rem;
+    padding: .1em;
+    /* border: 1px solid red; */
+    border-radius: 100%;
+    background-color: rgb(80, 80, 80);
+    width: fit-content;
 }

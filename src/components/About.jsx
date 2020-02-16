@@ -1,6 +1,6 @@
 import React from 'react'
 // import { FiPlus } from 'react-icons/fi'
-class Help extends React.Component {
+class About extends React.Component {
     constructor () {
         super()
         this.state = {
@@ -11,7 +11,7 @@ class Help extends React.Component {
     renderHelp = () => {
         return (
         <div className='help-container'>
-            <h2>Get help</h2>
+            <h2>About Nike</h2>
             <div className='plus-container' onClick={() => this.handleClick()}>
                 <span className={`plus-line vertical ${this.state.plusClassName}`}></span>
                 <span className='plus-line horizontal'></span>
@@ -23,12 +23,12 @@ class Help extends React.Component {
         if(this.state.modal) {
         return (
             <div className='help-modal'>
-                <a href='/'>Order Status</a>
-                <a href='/'>Shipping and Delivery</a>
-                <a href='/'>Returns</a>
-                <a href='/'>Payment Options</a>
-                <a href='/'>Gift Card Balance</a>
-                <a href='/'>Contact Us</a>
+                <a href='/'>News</a>
+                <a href='/'>Careers</a>
+                <a href='/'>Investors</a>
+                <a href='/'>Purpose</a>
+                <a href='/'>Sustainability</a>
+                <a href='/'>CS Supply Chains Act</a>
             </div>
         )
     }
@@ -53,4 +53,4 @@ class Help extends React.Component {
         )
     }
 }
-export default Help
+export default About
