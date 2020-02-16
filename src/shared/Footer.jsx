@@ -1,9 +1,14 @@
 import React from 'react'
-
+import '../styles/Footer.css'
+import {MainLinks} from '../components/MainLinks'
+import Help from '../components/Help'
 const Footer = () => {
     return (
         <>
-            <h1>this is the footer</h1>
+            <div className='footer-container'>
+                <MainLinks/>
+                <Help/>
+            </div>
         </>
     )
 }
