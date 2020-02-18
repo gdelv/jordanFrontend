@@ -44,7 +44,55 @@ class Landing extends React.Component {
 
                 }
 
+            ],
+
+            items2: [
+                {
+                    id: 1,
+                    title: 'TRENDING ON THE COURT',
+                    image1: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/8ef2ada7-0cf4-43d4-a0a1-4a60e3071b06/jordan.jpg',
+                    image2: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/1b387797-073a-4f60-8b67-9485c23ca556/jordan.jpg',
+                    image1title: 'AIR JORDAN XXXIV SE',
+                    image2header: 'L.A BORN',
+                    image2title: 'JORDAN "WHY NOT?" ZERO.3',
+                    a1text: 'Shop',
+                    a2text: 'Shop'
+
+                },
+                {
+                    id: 2,
+                    title: 'TRENDING ON THE STREETS',
+                    image1: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/ac454c04-2d8b-4cf5-b73a-7245545b6f7c/jordan.jpg',
+                    image2: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/de7332be-8c0d-405f-af9e-201ba9f61ab3/jordan.jpg',
+                    image1title: 'JORDAN AIR MAX 200',
+                    image2title: "JORDAN WOMEN'S FLIGHT CAPSULE",
+                    a1text: 'Shop',
+                    a2text: 'Shop'
+                },
+                {
+                    id: 3,
+                    title: 'MEMBER ACCESS',
+                    image1: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/2225370e-a461-4ea3-ac94-3ece70dc3575/jordan.jpg',
+                    image2: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/037f5213-a631-4e91-9c70-9187aefda947/jordan.jpg',
+                    image1header: "'JORDAN UNITE COLLECTION'",
+                    image1title: 'AIR JORDAN III',
+                    image2title: "GET JORDAN'S LATEST",
+                    a1text: 'Shop Now',
+                    a2text: 'Download SNKRS'
+                },
+                {
+                    id: 4,
+                    title: 'EXPLORE MORE FROM JORDAN',
+                    image1: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/063f62a9-28b5-4f40-9e06-a894f5c469dd/jordan.jpg',
+                    image2: 'https://c.static-nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/6d0400bf-5378-4ec5-85f1-40145fce3d30/jordan.jpg',
+                    image1title: 'STORIES UNITING THE COMMUNITY',
+                    image2title: 'THE ULTIMATE HISTORY OF AIR JORDAN',
+                    a1text: 'Explore',
+                    a2text: 'Explore'
+
+                }
             ]
+
         }
     }
 
@@ -54,15 +102,43 @@ class Landing extends React.Component {
             <div className='carousel-container'>
                 {this.state.items.map(item => {
                     return (
-                        
-                            <Slider key={item.id} {...settings}>
-                                <ItemCard
-                                    image={item.image}
-                                    item={item.item}
-                                    price={item.price}
-                                    className='slider-img'
-                                />
-                            </Slider>
+
+                        <Slider key={item.id} {...settings}>
+                            <ItemCard
+                                image={item.image}
+                                item={item.item}
+                                price={item.price}
+                                className='slider-img'
+                            />
+                        </Slider>
+                    )
+                })}
+            </div>
+        )
+    }
+
+    renderItems2 = () => {
+        return (
+            <div className='items2-container'>
+                {this.state.items2.map(item => {
+                    return (
+                        <div className='item2-card' key={item.id}>
+                            <h2>{item.title}</h2>
+                            <img src={item.image1} />
+                            <div>
+                                <h6>{item.image1header}</h6>
+                                <h2>{item.image1title}</h2>
+                                <a className='shop'>{item.a1text}</a>
+
+                            </div>
+                            <img src={item.image2} />
+                            <div>
+                                <h6>{item.image2header}</h6>
+                                <h2>{item.image2title}</h2>
+                                <a className='shop'>{item.a2text}</a>
+                            </div>
+
+                        </div>
                     )
                 })}
             </div>
@@ -89,6 +165,7 @@ class Landing extends React.Component {
                 </div>
                 <h2 className='items-title'>NOW IN FLIGHT</h2>
                 {this.renderItems(settings)}
+                {this.renderItems2()}
             </>
         )
     }
