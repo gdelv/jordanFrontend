@@ -128,14 +128,14 @@ class Landing extends React.Component {
                             <div>
                                 <h6>{item.image1header}</h6>
                                 <h2>{item.image1title}</h2>
-                                <a className='shop'>{item.a1text}</a>
+                                <a className={item.a1text !== 'Shop' ? 'shop-now' : 'shop'}>{item.a1text}</a>
 
                             </div>
                             <img src={item.image2} />
                             <div>
                                 <h6>{item.image2header}</h6>
                                 <h2>{item.image2title}</h2>
-                                <a className='shop'>{item.a2text}</a>
+                                <a className={item.a2text !== 'Shop' ? 'shop-now' : 'shop'}>{item.a2text}</a>
                             </div>
 
                         </div>
@@ -166,6 +166,12 @@ class Landing extends React.Component {
                 <h2 className='items-title'>NOW IN FLIGHT</h2>
                 {this.renderItems(settings)}
                 {this.renderItems2()}
+                <div className='bottom-container'>
+                    <li>Jordan Shoes</li>
+                    <li>Jordan Clothing</li>
+                    <li>Jordan Gear</li>
+                    <li>Featured</li>
+                </div>
             </>
         )
     }
