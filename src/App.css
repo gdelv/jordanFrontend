@@ -1,3 +1,27 @@
 .App {
-    height: 300vh;
+    height: 120vh;
+    /* width: 100%; */
+    /* min-width: 100%; */
+    /* max-width: 100%; */
+    /* border: 1px solid green; */
+}
+
+footer {
+  display: block;
+  position: relative;
+  background-color: #111;
+  /* scroll: none; */
+  height: fit-content;
+  width: 100%;
+  bottom: -260px;
+  border: 1px solid red;
+}
+
+main {
+  position: relative;
+  top: 260px;
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid orange;
+  /* padding-bottom: 2rem; */
 }

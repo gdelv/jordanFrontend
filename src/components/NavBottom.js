@@ -7,15 +7,14 @@ const NavBottom = (props) => {
     return (
         <div className={props.containerClass}>
             <div>
-                <img className={props.imageClass} src={props.src}></img>
+                <img className={props.imageClass} src={props.src} alt='jordan logo'></img>
             </div>
             <div className={props.linkContainer}>
-                <a>{props.link1}</a>
-                <a>{props.link2}</a>
-                <a>{props.link3}</a>
-                <a>{props.link4}</a>
+                <a href='/'>{props.link1}</a>
+                <a href='/'>{props.link2}</a>
+                <a href='/'>{props.link3}</a>
+                <a href='/'>{props.link4}</a>
             </div>
-
         </div>
     )
 }

@@ -10,29 +10,21 @@ import NavBottom from '../components/NavBottom'
 class Nav extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {
             prevScrollpos: window.pageYOffset,
             visible: true,
             height: 0
         };
     }
-
-
-
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
-
-
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-
     handleScroll = (e) => {
         if (window.pageYOffset > 40) {
             console.log('scrolled')
-
             this.setState({
                 visible: false,
             })
@@ -42,7 +34,6 @@ class Nav extends React.Component {
             })
         }
     }
-
     render() {
         return (
             <>
@@ -51,12 +42,11 @@ class Nav extends React.Component {
             ref={(divElement) => {this.divElement = divElement}}
             >
                 <div>
-                    <img class='logo' src='https://i.imgur.com/iB0cdid.png'></img>
+                    <img alt='jordan logo' class='logo' src='https://i.imgur.com/iB0cdid.png'></img>
                     <b>{this.state.elementHeight}</b>
                 </div>
                 <div class='right-nav'>
                     <FiSearch
-        
                         size='1.5rem'
                     />
                     <div >
@@ -72,7 +62,6 @@ class Nav extends React.Component {
                     // onClick={props.onClick}
                     size='1.5rem'
                     />
-        
                 </div>
             </nav>
             <NavBottom
@@ -85,26 +74,9 @@ class Nav extends React.Component {
                 imageClass='jordan-logo'
                 linkContainer='link-container'
                 
-
             />
-
             </>
-
         )
-
     }
-
 }
-
-
-
-
-
-
-
-
-
 export default Nav
-
-
-
