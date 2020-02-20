@@ -85,7 +85,7 @@
     justify-content: space-evenly;
     color: black;
     width: 50%;
-
+    padding-top: 2em;
 }
 
 .social-link-container {
@@ -95,4 +95,46 @@
     border-radius: 100%;
     background-color: rgb(80, 80, 80);
     width: fit-content;
+}
+
+.bottom-container {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    margin-bottom: 2em;
+}
+
+.location-container {
+    display: flex;
+    padding-top: 2em;
+    padding-left: 3em;
+    width: fit-content;
+    color: rgb(214, 214, 214);
+    border: 1px solid green;
+}
+.location-container h3 {
+    padding-left: 1em;
+    font-weight: 100;
+    font-size: 1.5vw;
+
+}
+.location-icon {
+    display: block;
+    border: 1px solid red;
+    margin:  auto 0;
+    font-size: 20px;
+}
+.copyright {
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding-left: 4em;
+}
+.bottom-container a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-size: 2vw;
+    padding-left: 2em;
+    margin-top: 2em;
+    border: 1px solid red;
 }
