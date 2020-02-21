@@ -23,7 +23,7 @@ class Nav extends React.Component {
         window.removeEventListener('scroll', this.handleScroll);
     }
     handleScroll = (e) => {
-        if (window.pageYOffset > 40) {
+        if (window.pageYOffset > 35) {
             console.log('scrolled')
             this.setState({
                 visible: false,
@@ -42,6 +42,7 @@ class Nav extends React.Component {
             ref={(divElement) => {this.divElement = divElement}}
             >
                 <div>
+                    <img class='logo' src='https://i.imgur.com/iB0cdid.png'></img>
                     <img alt='jordan logo' class='logo' src='https://i.imgur.com/iB0cdid.png'></img>
                     <b>{this.state.elementHeight}</b>
                 </div>

@@ -3,7 +3,7 @@
     justify-content:space-between;
     align-items: center;
     border-bottom: 1px solid lightgrey;
-    padding: 10px 10px;
+    padding: 0px 10px;
     height: 6vh;
     /* position: fixed; */
     top: 0;
@@ -23,6 +23,11 @@ nav {
     position: fixed;
     display: flex;
     flex-direction: column;
+/*     width: 100%; */
+    top: 3rem;
+    z-index: 90;
+    border-bottom: 1px solid black;
+    padding-bottom: 1.5rem;
     /* color: blue; */
     /* top: 4rem; */
     z-index: 9999;
@@ -36,8 +41,11 @@ nav {
 
 .new-nav .link-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-left: -.1rem;
 }
+
 
 
 
@@ -45,6 +53,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+/*     position: relative;
+    top: 0px;
+    padding: 1.5rem; */
     position: fixed;
     min-width: 73%;
     top: 70px;
@@ -61,7 +72,9 @@ nav {
 }
 
 .link-container a {
-    /* padding: 0px 10px; */
+    cursor: pointer;
+    color: #111;
+    font-weight: 500;
 }
 
 .jordan-logo {
@@ -69,16 +82,24 @@ nav {
 }
 
 
+.new-nav .jordan-logo {
+    width: 3.5rem;
+    padding-left: 1.2rem;
+}
+
+
 .logo {
     min-width: 30px;
     min-height: 30px;
     width: 4rem;
+    padding-left: .2rem;
 }
 
 .right-nav {
     display: flex;
     width: 10rem;
     justify-content: space-evenly;
+    padding-right: 1rem;
 }
 
 .right-nav a {
