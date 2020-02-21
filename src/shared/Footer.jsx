@@ -1,9 +1,20 @@
 import React from 'react'
-
+import '../styles/Footer.css'
+import { MainLinks } from '../components/MainLinks'
+import Help from '../components/Help'
+import About from '../components/About'
+import { Bottom } from '../components/Bottom'
+import { SocialMediaLinks } from "../components/SocialMediaLinks";
 const Footer = () => {
     return (
         <>
-            <h1 class='footer'>this is the footer</h1>
+            <div className='footer-container'>
+                <MainLinks/>
+                <Help/>
+                <About/>
+                <SocialMediaLinks/>
+                <Bottom/>
+            </div>
         </>
     )
 }
